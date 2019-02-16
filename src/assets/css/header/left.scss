@@ -1,0 +1,39 @@
+.nav-left {
+  line-height: 40px;
+  a {
+    color: #999;
+    &:hover {
+      color: #31bbac;
+    }
+  }
+  .change-city {
+    background: #f4f4f4;
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    &:hover {
+      color: #31bbac;
+    }
+  }
+  .current-city {
+    color: #666;
+
+  }
+  .city-list, .user-entry {
+    color: #999;
+    display: inline-block;
+    a {
+      color: #999;
+      &:hover {
+        color: #31bbac;
+      }
+    }
+  }
+  .user-entry {
+    margin-left: 20px;
+    .login {
+      color: #31bbac;
+      margin: 0 5px;
+    }
+  }
+}

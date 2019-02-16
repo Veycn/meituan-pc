@@ -1,0 +1,115 @@
+.nav-right {
+  height: 40px;
+  width: 300px;
+  line-height: 40px;
+  ul {
+    width: 100%;
+    .nav-item {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      float: left;
+      z-index: 10;
+      font-size: 12px;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      box-sizing: border-box;
+      text-align: center;
+      &.dialog:hover .nav-second{
+        display: block;
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+      }
+      &.dialog:hover {
+        background: #fff;
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+        border-color: #e5e5e5;
+      }
+      a {
+        color: #999999;
+      }
+      a:hover {
+        color: #31bbac;
+      }
+      .nav-second {
+        width: 100%;
+        display: none;
+      }
+      .nav-second.w140, .nav-second.w1200{
+        position: absolute;
+        right: -1px;
+        top: 95%;
+        width: 140%;
+        box-sizing: content-box;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+        border-top: none;
+      }
+      .subContainer.nav-second.w1200 {
+        text-align: initial;
+        width: 1200px;
+        .container {
+          position: relative;
+          width: 100%;
+          text-align: initial;
+          .list {
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            .nav-third {
+              dt {
+                margin: 15px 0;
+                font-size: 14px;
+                color: #31bbac;
+              }
+              dd {
+                display: inline-block;
+                height: 30px;
+              }
+            }
+          }
+          .tour {
+            width: 250px;
+            margin-left: 40px;
+            .nav-third {
+              dd {
+                width: 30%;
+              }
+            }
+          }
+          .eat {
+            width: 156px;
+            margin-left: 40px;
+            .nav-third {
+              dd {
+                width: 45%;
+              }
+            }
+          }
+          .movie {
+            width: 90px;
+            margin-left: 40px;
+            .nav-third {
+              dd {
+                width: 100%;
+              }
+            }
+          }
+          .app {
+            width: 350px;
+            margin-left: 170px;
+            .nav-third {
+              dd {
+                display: inline-block;
+                img {
+                  width: 60px;
+                  height: 60px;
+                  border: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?l5v59p');
+  src:  url('fonts/icomoon.eot?l5v59p#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l5v59p') format('truetype'),
+    url('fonts/icomoon.woff?l5v59p') format('woff'),
+    url('fonts/icomoon.svg?l5v59p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add_circle:before {
+  content: "\e900";
+}
+.icon-arrow_lift:before {
+  content: "\e901";
+}
+.icon-check_circle:before {
+  content: "\e902";
+}
+.icon-close:before {
+  content: "\e903";
+}
+.icon-favorite:before {
+  content: "\e904";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e905";
+}
+.icon-remove_circle_outline:before {
+  content: "\e906";
+}
+.icon-shopping_cart:before {
+  content: "\e907";
+}
+.icon-thumb_down:before {
+  content: "\e908";
+}
+.icon-thumb_up:before {
+  content: "\e909";
+}
+.icon-office:before {
+  content: "\e90a";
+}
+.icon-blog:before {
+  content: "\e90b";
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-dice:before {
+  content: "\e915";
+}
+.icon-podcast:before {
+  content: "\e91c";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-bell:before {
+  content: "\e951";
+}
+.icon-database:before {
+  content: "\e964";
+}
+.icon-spinner5:before {
+  content: "\e97e";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-shield:before {
+  content: "\e9b4";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-google-drive:before {
+  content: "\ea8f";
+}
+.icon-xing:before {
+  content: "\ead3";
+}
