@@ -78,7 +78,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
-        // scss 依赖 node-scss
+        // scss 依赖 node-sass
       }
     ]
   },

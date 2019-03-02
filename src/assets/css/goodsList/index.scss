@@ -1,0 +1,99 @@
+.goodsList-wrapper {
+  width: 100%;
+  .goodsList-container {
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+    .position {
+      background: #f8f8f8;
+      padding: 30px 10px 20px 10px;
+    }
+    .classify {
+      .pub {
+        float: left;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+      .left {
+        width: 950px;
+        background: #f8f8f8;
+        .banner {
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          .public {
+            padding: 10px 20px;
+            span {
+              margin-right: 30px;
+              &.all {
+                background: #13D1BE;
+                border-radius: 10px;
+                color: #fff;
+                padding: 0 6px;
+              }
+            }
+            .second-filter {
+              display: inline-block;
+              width: 83%;
+              padding-bottom: 15px;
+              border-bottom: 1px solid #ccc;
+            }
+          }
+          .classify-wrapper {
+            padding-bottom: 15px;
+          }
+          .filter-condition {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 20px;
+            .conditions {
+              display: inline-block;
+              margin-left: 20px;
+              .item {
+                border: 1px solid #31bbac;
+                border-radius: 10px;
+                font-size: 12px;
+                color: #31bbac;
+                padding: 0 6px;
+                cursor: pointer;
+                i {
+                  margin-left: 2px;
+                }
+              }
+              .clear {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .list {
+          border: 1px solid #ccc;
+          background: #fff;
+          border-radius: 4px;
+          margin-top: 10px;
+          padding: 10px 20px;
+          .filter {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            span {
+              margin: 0 10px;
+              font-size: 14px;
+              color: #333;
+              cursor: pointer;
+              &.active {
+                color: #13D1BE;
+              }
+              &:nth-child(1) {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        margin-left: 10px;
+        width: 230px;
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 <template>
-  <div class="select" @click="show">
-    <span>{{ value }}</span>
+  <div class="select" @click="show" v-document-click="documentClick">
+    <span>{{ select == null ? value : select }}</span>
     <i class="el-icon-caret-bottom"></i>
     <div class="dialog" :style="{width: w + 'px'}" :class="{active: isActive}">
       <p>{{ title }}</p>
       <div class="province-wrapper clearfix">
         <div class="province-column" v-for="(items, index) in list" :key="index">
-          <span v-for="(item, index) in items" :key="index" class="province-item" @click="choose">{{ item }}</span>
+          <span v-for="(item, index) in items" :key="index" class="province-item" @click="choose(item)">{{ item }}</span>
         </div>
       </div>
     </div>
@@ -16,18 +16,23 @@
 <script>
 export default {
   name: 'mSelect',
-  props: ['value', 'title', 'list'],
+  props: ['value', 'title', 'list', 'isActive'],
   data () {
     return {
-      isActive: false
+      select: null
     }
   },
   methods: {
-    show () {
-      this.isActive = true
+    show (e) {
+      e.stopPropagation()
+      this.$emit('change_active', true)
     },
     choose (item) {
-      console.log(this.props.value)
+      this.select = item
+      this.$emit('item_select', item)
+    },
+    documentClick () {
+      this.$emit('change_active', false)
     }
   },
   computed: {
@@ -52,6 +57,7 @@ export default {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   background: #fff;
+  margin: 0 15px;
   i {
     float: right;
     margin-right: 10px;
@@ -77,15 +83,15 @@ export default {
       color: #CCC;
       margin-bottom: 11px;
     }
-    &:before {
+    &:after {
       content: "";
+      position: absolute;
       left: 26px;
       top: 0;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
+      border-left: 6px solid red;
+      border-right: 6px solid red;
       border-top: 0;
-      position: absolute;
-      background: #fff;
+      background: red;
     }
     .province-wrapper {
       .province-column {

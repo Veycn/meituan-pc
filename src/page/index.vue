@@ -34,7 +34,11 @@ export default {
     navigation,
     myStyle,
     live,
-    movie
+    movie,
+    curCity: null
+  },
+  mounted () {
+    this.$store.state.cityPosition = this.$route.params.city
   }
 }
 </script>

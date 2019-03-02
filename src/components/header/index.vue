@@ -20,6 +20,5 @@ export default {
 <style scoped lang="scss">
 .header {
   width: 100%;
-
 }
 </style>

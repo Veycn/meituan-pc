@@ -1,7 +1,7 @@
 <template>
   <div class="nav-left">
     <i class="el-icon-location" />
-    <span class="current-city">重庆</span>
+    <span class="current-city">{{ this.$store.state.cityPosition ? this.$store.state.cityPosition : '重庆' }}</span>
     <router-link :to="{name: 'changeCity'}" class="changeCity">切换城市</router-link>
     <div class="city-list">
       [
@@ -19,7 +19,10 @@
 
 <script>
 export default {
-  name: 'geo'
+  name: 'geo',
+  mounted () {
+    console.log(this.$store.state)
+  }
 }
 </script>
 
